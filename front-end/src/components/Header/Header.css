@@ -1,7 +1,8 @@
 .header{
     height: 34vw;
+    width: 100%;
     margin: 30px auto;
-    background: url('/Header_img.png') no-repeat;
+    background: url('../../assets/header_immg.png') no-repeat;
     background-size: contain;
     position: relative;
     margin-top: -8px;
@@ -17,24 +18,56 @@
     left: 4vw;
     animation: fadeIn 3s;
 }
-.header-contents h3{
+.header-contents h4{
     font-weight: 500;
-    color:rgb(228, 87, 87);
-
+    color:white ;
+    /* color:rgb(236, 91, 38); */
     font-size: max(4.5vw,20px);
     
 }
 .header-contents p{
-    color: white;
+    color:white ;
+    font-weight: bold;
+
     /* font-size: 1vw; */
-font-size: 16px;
+font-size: 18px; 
 }
 .header-contents button{
-    border: none;
-  color: #747474; 
+    border: 2px solid tomato;
+  color: white; 
     font-weight: 500;
-    padding: 1vw 2.3vw;
-    background-color: white;
+    padding: 10px;
+    background:tomato;
+    margin-left:150px;
+    text-transform: uppercase;
     font-size: max(1vw,13px);
     border-radius: 50px;
+    width: 100px;
+}
+button:hover{
+    color:white;
+    background-color: rgb(247, 69, 37);
+    border: 2px solid rgb(247, 69, 37);
+    
+}
+@media (max-width:1050px) {
+
+    .header{
+        height: 38vw;
+    }
+   
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px) {
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
 }

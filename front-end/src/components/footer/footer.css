@@ -1,0 +1,142 @@
+
+  
+  /* Footer Container */
+  .footer {
+    background-color: #FAF9F9; /* Light background color */
+    padding: 20px 20px;
+    color: #155724; /* Dark green text */
+  }
+  
+  /* Image with Text Styling */
+  .footer-image-text {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px; /* Space between image and the rest of the footer */
+  }
+  
+  .footer-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .footer-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #155724; /* Text color */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; /* Evenly space columns */
+    flex-wrap: wrap;
+  }
+  
+  div.text-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Ensure minimum width */
+    max-width: calc(25% - 20px); /* Equal width for four columns with margin */
+    color: #155724; /* Text color for readability */
+  }
+  
+  div.text-column h3 {
+    margin-bottom: 10px;
+  }
+  
+div.text-column p {
+    margin: 0 0 10px;
+  }
+  
+  div.text-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  div.text-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  div.text-column ul li a {
+    color: #155724; /* Link color */
+    text-decoration: none;
+  }
+  
+  div.text-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Icons */
+  .social-icons a {
+    color: #ff8c00; /* Orange icons */
+    margin-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #155724; /* Green on hover */
+  }
+  
+  /* Footer Bottom (Updated for Center Alignment on Image) */
+  .footer-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 1px 0;
+    background-color:#B3D3A4; /* Slight white background for readability */
+    font-size: 14px;
+    color: #155724;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-text {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .text-column {
+        margin: 5px 0;
+        min-width: auto; /* Adjust width for smaller screens */
+        max-width: 100%; /* Full width for small screens */
+        text-align: center; /* Center align for smaller screens */
+    }
+  
+    .footer-image-text {
+        padding: 10px; /* Adjust padding */
+    }
+  
+    .footer-text {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  
+    .text-column h3 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  }
+  @media(max-width:750px){
+    .footer{
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+    .footer-bottom{
+      text-align: center;
+    }
+    .text-column{
+      text-align: center;
+    }
+  }
