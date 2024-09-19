@@ -1,3 +1,0 @@
-let myKey = {
-    publicTestKey: ""
-}
