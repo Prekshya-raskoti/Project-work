@@ -8,8 +8,7 @@ const orderSchema = new mongoose.Schema({
     status:{type:String,default:"Food Processing"},
     date:{type:Date,default:Date.now()},
     payment:{type:Boolean,default:false}
-
 })
 
-const orderModel = mongoose.models.oder || mongoose.model("order",orderSchema)
+const orderModel = mongoose.models.oder || mongoose.model("order",orderSchema);
 export default orderModel;
