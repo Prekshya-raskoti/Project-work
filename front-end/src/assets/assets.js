@@ -318,35 +318,35 @@ export const food_list = [
         _id: "28",
         name: " Pasta",
         image: food_28,
-        price: 24,
+        price: 240,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pasta"
     }, {
         _id: "29",
         name: "Buttter Noodles",
         image: food_29,
-        price: 14,
+        price: 140,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }, {
         _id: "30",
         name: "Veg Noodles",
         image: food_30,
-        price: 12,
+        price: 120,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }, {
         _id: "31",
         name: "Somen Noodles",
         image: food_31,
-        price: 20,
+        price: 200,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }, {
         _id: "32",
         name: "Cooked Noodles",
         image: food_32,
-        price: 15,
+        price: 150,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }
