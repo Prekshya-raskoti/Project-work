@@ -97,6 +97,23 @@ div.text-column p {
   .footer-bottom p {
     margin: 5px 0;
   }
+
+  div.social-icons img.linkedin{
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+div.social-icons img.facebook{
+  margin-top: 5px;
+    width: 40px;
+    height: 38px;
+}
+div.social-icons img.google{
+    margin-top: 5px;
+    width: 40px;
+    height: 38px;
+
+}
   
   /* Responsive Design */
   @media (max-width: 768px) {

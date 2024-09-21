@@ -4,6 +4,8 @@ import './LoginPopup.css';
 import cross_icon from '../../assets/cross_icon.png'; // Correct asset import
 import facebook from '../../assets/facebook_icon.png';
 import linkedin from '../../assets/linkedin_icon.png';
+import google from '../../assets/google_icon.png';
+
 import { StoreContext } from '../../context/StoreContext';
 
 const LoginPopup = ({ setShowLogin }) => {
@@ -85,30 +87,25 @@ const LoginPopup = ({ setShowLogin }) => {
 
         <div className='login-popup-condition'>
           <input type='checkbox' required />
-          <p>By continuing, I agree to the terms of use & privacy policy.</p>
+          <p className='agree'>By continuing, I agree to the terms of use & privacy policy.</p>
         </div>
 
         {currState === "Login" ? (
-          <p>Create a new account? <span onClick={() => setCurrState("Sign Up")}>Click here</span></p>
+          <p className='createAccount'>Create a new account? <span onClick={() => setCurrState("Sign Up")}>Click here</span></p>
         ) : (
           <p>Already have an account? <span onClick={() => setCurrState("Login")}>Login here</span></p>
         )}
 
         <label>or continue with</label>
-
+        </form>
         <div className="continue-btn">
           <div>
-            <button className="facebook-btn" type="button" onClick={() => console.log('Facebook login')}>
-              <img src={facebook} alt="Facebook" /><b>SIGN IN WITH FACEBOOK</b>
-            </button>
-          </div>
-          <div>
-            <button className="linkedin-btn" type="button" onClick={() => console.log('LinkedIn login')}>
-              <img src={linkedin} alt="LinkedIn" /><b>SIGN IN WITH LINKEDIN</b>
+            <button className="socialmedia-btn" type="button" onClick={() => console.log('Facebook login')}>
+              <img src={facebook} alt="Facebook" className='facebook' /><b><img src={google} alt="Google" className='google' /></b><b><img src={linkedin} alt="LinkedIn" className='linkedin' /></b>
             </button>
           </div>
         </div>
-      </form>
+      
     </div>
   );
 };

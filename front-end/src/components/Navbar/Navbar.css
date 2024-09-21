@@ -78,6 +78,11 @@
     list-style: none;
 
 }
+ .navbar-profile img{
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+}
 .nav-profile-dropdown li{
     display: flex;
     align-items: center;

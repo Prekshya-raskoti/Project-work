@@ -1,6 +1,9 @@
 import React from 'react';
 import './footer.css'; // Import your CSS file for styling
 import { assets } from '../../assets/assets';
+import facebook from '../../assets/facebook_icon.png';
+import linkedin from '../../assets/linkedin_icon.png';
+import google from '../../assets/google_icon.png';
 
 const Footer = () => {
   return (
@@ -34,15 +37,8 @@ const Footer = () => {
                 <div className="text-column">
                     <h3>Follow Us</h3>
                     <div className="social-icons">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-twitter"></i>
-                        </a>
+                    <img src={facebook} alt="Facebook" className='facebook' /><b><img src={google} alt="Google" className='google' /></b><b><img src={linkedin} alt="LinkedIn" className='linkedin' /></b>
+
                     </div>
                 </div>
             </div>
