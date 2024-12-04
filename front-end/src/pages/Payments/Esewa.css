@@ -1,0 +1,87 @@
+.esewa-container {
+  padding: 20px;
+  background: #f9f9f9;
+  max-width: 600px;
+  margin: auto;
+  margin-left: -80px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Khalti{
+margin-top: -630px;
+margin-left: 700px;
+}
+
+.Subtotal{
+width: 400px;
+}
+
+.payment-form fieldset {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.payment-form legend {
+  font-weight: bold;
+  color: #333;
+}
+
+.payment-form div {
+  margin-bottom: 10px;
+}
+
+.payment-form label {
+  font-weight: 600;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f8f8f8;
+  margin-left: 220px;
+}
+.input-Cart-Totals{
+  margin-top: -44px;
+  width: 100px;
+}
+.input-bill-number{
+  margin-top: -44px;
+  width: 100px;
+}
+.inputs-Delivery-Information{
+  margin-top: -44px;
+  width: 300px;
+}
+.img-khalti{
+  width: 200px;
+  height: 200px;
+  margin-left: 700px;
+  margin-top: -10px;
+}
+
+.paymentss-button, .download-button {
+  background: #007bff;
+  color: white;
+  width: 210px;
+  padding: 10px 10px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 920px;
+  font-weight: bolder;
+}
+.scanner{
+margin-top: -200px;
+}
+
+.payment-button:hover, .download-button:hover {
+  background: #0056b3;
+}

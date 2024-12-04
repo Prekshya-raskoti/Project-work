@@ -8,13 +8,41 @@ import arko_khalti from '../../assets/khalti-logo-F0B049E67E-seeklogo.com.png'
 import { useNavigate } from 'react-router-dom';
 
 const PlaceOrder = () => {
-  const { getTotalCartAmount } = useContext(StoreContext);
+  const { getTotalCartAmount,token,food_list,cartItems,url } = useContext(StoreContext);
   const [showOptions, setShowOptions] = useState(false);
 
+  const [data, setData] = useState({
+    firstName:"",
+    lastName:"",
+    email:"",
+    street:"",
+    city:"",
+    state:"",
+    zipcode:"",
+  country:"",
+   phone:""
+ })
+
+ const onChangeHandler = (event) => {
+  const name = event.target.name;
+  const value = event.target.value;
+  setData(data=>({...data,[name]:value}))
+ }
+
+ 
+  
   // Toggle dropdown visibility
   const toggleOptions = () => {
+    if (Object.values(data).some((value) => value.trim() === '')) {
+      alert('Please fill in all the delivery fields!');
+      return;
+    }
+  
+    // Save delivery data to localStorage for later use in Esewa
+    localStorage.setItem('deliveryData', JSON.stringify(data));
     setShowOptions(!showOptions);
   };
+  
   const navigate = useNavigate();
 
   return (
@@ -23,20 +51,20 @@ const PlaceOrder = () => {
       <div className="place-order-left">
         <p className="title">Delivery Information</p>
         <div className="multi-fields">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
+          <input name='firstName' onChange={onChangeHandler} value={data.firstName} type="text" placeholder="First Name" />
+          <input  name='lastName' onChange={onChangeHandler} value={data.lastName} type="text" placeholder="Last Name" />
         </div>
-        <input type="email" placeholder="Email Address" />
-        <input type="text" placeholder="Street Address" />
+        <input name='email' onChange={onChangeHandler} value={data.email} type="email"  placeholder="Email Address" />
+        <input  name='street' onChange={onChangeHandler} value={data.street} type="text" placeholder="Street Address" />
         <div className="multi-fields">
-          <input type="text" placeholder="City" />
-          <input type="text" placeholder="State" />
+          <input name='city' onChange={onChangeHandler} value={data.city} type="text" placeholder="City" />
+          <input name='state' onChange={onChangeHandler} value={data.state} type="text" placeholder="State" />
         </div>
         <div className="multi-fields">
-          <input type="text" placeholder="Zip Code" />
-          <input type="text" placeholder="Country" />
+          <input  name='zipcode' onChange={onChangeHandler} value={data.zipcode} type="text" placeholder="Zip Code" />
+          <input name='country' onChange={onChangeHandler}value={data.country} type="text" placeholder="Country" />
         </div>
-        <input type="text" placeholder="Phone Number" />
+        <input name='phone' onChange={onChangeHandler} value={data.phone} type="text" placeholder="Phone Number" />
       </div>
 
       {/* Cart Total Section */}

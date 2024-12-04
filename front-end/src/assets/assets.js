@@ -64,7 +64,8 @@ import parcel_icon from './parcel_icon.png'
 import esewa_logo from './esewa.PNG'
 import khalti_logo from './khalt logo.png'
 import arko_khalti from './khalti-logo-F0B049E67E-seeklogo.com.png'
-
+import Khalti from '../assets/Khalti.PNG'
+import Esewa from '../assets/Esewa1.PNG'
 export const assets = {
     logo,
     basket_icon,
@@ -89,7 +90,9 @@ export const assets = {
     parcel_icon,
     esewa_logo,
     khalti_logo,
-    arko_khalti
+    arko_khalti,
+    Khalti,
+    Esewa
 }
 
 export const menu_list = [
